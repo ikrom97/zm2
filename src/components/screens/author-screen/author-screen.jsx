@@ -43,14 +43,14 @@ function AuthorScreen() {
         </InfoItem>
 
         <InfoItem>
-          <InfoTitle>Date of Birth</InfoTitle>
+          {/* <InfoTitle>Date of Birth</InfoTitle> */}
           <InfoDescription>May 1, 1972</InfoDescription>
         </InfoItem>
 
         <InfoItem>
           {/* <InfoTitle>Quotes</InfoTitle> */}
           <InfoDescription>
-            <Text>From my own philosophical creativity:</Text>
+            <Text>From my own philosophical creativity</Text>
             <QuoteLinks>
               <Button href={AppRoute.Quotes}>{AppPage.Quotes}</Button>
               {/* <Button>Quotes of famous people</Button>

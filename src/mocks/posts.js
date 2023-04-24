@@ -25,4 +25,20 @@ export const posts = [
     image: '/img/posts/post-5.jpg',
     description: 'Friendship is associated for us with warm, pleasant feelings. This is the good side of life, and that is why it is valuable. Often, the positive experiences that we have in childhood friendships form the basis of our ability to withstand life\'s difficulties.',
   }, 
+  {
+    id: 6,
+    title: 'Friendship',
+    image: '/img/posts/post-6.jpg',
+    description: 'Friendship is associated for us with warm, pleasant feelings. This is the good side of life, and that is why it is valuable. Often, the positive experiences that we have in childhood friendships form the basis of our ability to withstand life\'s difficulties.',
+  }, {
+    id: 7,
+    title: 'Friendship',
+    image: '/img/posts/post-7.jpg',
+    description: 'Friendship is associated for us with warm, pleasant feelings. This is the good side of life, and that is why it is valuable. Often, the positive experiences that we have in childhood friendships form the basis of our ability to withstand life\'s difficulties.',
+  }, {
+    id: 8,
+    title: 'Friendship',
+    image: '/img/posts/post-8.jpg',
+    description: 'Friendship is associated for us with warm, pleasant feelings. This is the good side of life, and that is why it is valuable. Often, the positive experiences that we have in childhood friendships form the basis of our ability to withstand life\'s difficulties.',
+  },
 ];

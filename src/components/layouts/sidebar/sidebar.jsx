@@ -7,10 +7,10 @@ import PostCard from '@/components/ui/post-card/post-card';
 function Sidebar() {
   return (
     <StyledSidebar>
-      <Header>
+      {/* <Header>
         <HeaderTitle>Motivational <br /> illustrations</HeaderTitle>
         <Text clr="#747474">Brief Description of <br /> Motivational Quotes</Text>
-      </Header>
+      </Header> */}
 
       <Posts>
         {posts?.map((post) =>

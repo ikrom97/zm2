@@ -27,7 +27,7 @@ export const Posts = styled.div`
   margin: 16px;
   padding-right: 5px;
   margin-right: 5px;
-  height: calc(100% - 173px);
+  height: calc(100% - 32px);
   overflow-x: hidden;
   overflow-y: scroll;
 
