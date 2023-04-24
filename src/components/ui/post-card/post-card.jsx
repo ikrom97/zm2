@@ -15,10 +15,10 @@ function PostCard({ post }) {
           priority={id == 1}
         />
 
-        <PostTitle>{title}</PostTitle>
+        {/* <PostTitle>{title}</PostTitle> */}
       </CardLink>
 
-      <PostDescription>{description}</PostDescription>
+      {/* <PostDescription>{description}</PostDescription> */}
     </Card>
   );
 }

@@ -48,7 +48,7 @@ function AuthorScreen() {
         </InfoItem>
 
         <InfoItem>
-          <InfoTitle>Quotes</InfoTitle>
+          {/* <InfoTitle>Quotes</InfoTitle> */}
           <InfoDescription>
             <Text>From my own philosophical creativity:</Text>
             <QuoteLinks>

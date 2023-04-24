@@ -23,7 +23,7 @@ export const HeaderTitle = styled(Title)`
 export const Posts = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   margin: 16px;
   padding-right: 5px;
   margin-right: 5px;

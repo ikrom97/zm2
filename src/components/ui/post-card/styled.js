@@ -17,7 +17,7 @@ export const CardLink = styled(Link)`
 export const PostImage = styled.img`
   width: 100%;
   border-radius: 4px;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 `;
 
 export const PostTitle = styled(({ children, ...rest }) => (

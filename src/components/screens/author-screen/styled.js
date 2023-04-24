@@ -56,7 +56,7 @@ export const InfoItem = styled.div`
   padding-bottom: 24px;
   gap: 32px;
   
-  &:not(:first-child) {
+  &:not(:first-child, :last-child) {
     grid-template-columns: 170px auto;
   }
 `;

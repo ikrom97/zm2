@@ -38,7 +38,7 @@ function SelectedPost() {
   return post ? (
     <PostWrap onClick={handleWrapClick}>
       <Post>
-        <PostTitle>{post?.title}</PostTitle>
+        {/* <PostTitle>{post?.title}</PostTitle> */}
 
         <PostImage
           src={post?.image}
@@ -47,7 +47,7 @@ function SelectedPost() {
           alt={post?.title}
         />
 
-        <Text color="#747474">{post?.description}</Text>
+        {/* <Text color="#747474">{post?.description}</Text> */}
 
         <CloseButton type="button" onClick={() => router.push(router.pathname)}>
           <CloseIcon width={18} height={18} />
