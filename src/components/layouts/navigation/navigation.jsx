@@ -8,7 +8,7 @@ import { navs } from '@/const';
 
 function Navigation() {
   const router = useRouter();
-  const setClassName = (path) => router.pathname.includes(path) ? 'active' : '';
+  const setClassName = (path) => router.pathname === path ? 'active' : '';
 
   const handleLogin = () => {
     console.log('Login handler');
