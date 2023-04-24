@@ -5,7 +5,7 @@ import { Wrapper } from './styled';
 
 function QuoteTags() {
   const tags = [
-    'Мораль и Этика', 'Развитие личности', 'Развитие общества', 'Счастье', 'Человечность',
+    'Morals and Ethics', 'Development of personality', 'Development of society', 'Happiness', 'Humanity',
   ];
 
   return (

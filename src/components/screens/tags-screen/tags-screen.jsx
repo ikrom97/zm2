@@ -2,8 +2,34 @@ import React, { useState } from 'react';
 import { ABCButton, ABCList, ABCListItem, List, ListItem, Main, Section, Title } from './styled';
 
 function TagsScreen() {
-  const ABC = ['а', 'б', 'в', 'г', 'д', 'е', 'ж', 'з', 'и', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'э', 'ю', 'я'];
-  const tags = ['Вечные вопросы', 'Развитие личности', 'Развитие личности', 'Вечные вопросы', 'Жизнелюбие', 'Развитие общества', 'Развитие общества', 'Жизнелюбие', 'Мировоззрение', 'Самореализация', 'Самореализация', 'Мировоззрение', 'Мораль и Этика', 'Цели человека', 'Цели человека', 'Мораль и Этика', 'Направления мысли', 'Ценность жизни', 'Ценность жизни', 'Направления мысли', 'Ценности и Идеалы', 'Юмор и Ирония', 'Юмор и Ирония', 'Наука и Просвещение', 'Ценности и Идеалы', 'Ценности и Идеалы'];
+  const ABC = [
+    'a',
+    'b',
+    'c',
+    'd',
+    'f',
+    'g',
+    'h',
+    'i',
+    'j',
+    'k',
+    'l',
+    'm',
+    'n',
+    'o',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'u',
+    'v',
+    'w',
+    'x',
+    'y',
+    'z',
+  ];
+  const tags = ['Eternal questions', 'Eternal questions', 'Love of life', 'Development of society', 'Development of society', 'Love of life', 'Worldview', 'Self-realization', 'Self-realization', 'Worldview', 'Morals and Ethics', 'Aims of Man', 'Aims of Man', 'Morals and Ethics', 'Directions of Thought', 'Value of Life', 'Value of Life', 'Directions of Thought', 'Values and Ideals', 'Humor and Irony', 'Humor and Irony', 'Values and Ideals', 'Values and Ideals'];
   const [selectedLetter, setSelectedLetter] = useState('');
 
   const handleButtonClick = (letter) => () => {
@@ -17,7 +43,7 @@ function TagsScreen() {
   return (
     <Main>
       <Section>
-        <Title>Теги по алфавиту</Title>
+        <Title>Tags alphabetically</Title>
 
         <ABCList>
           {ABC.map((letter) => (
@@ -34,7 +60,7 @@ function TagsScreen() {
       </Section>
 
       <Section>
-        <Title>Популярные теги</Title>
+        <Title>Popular tags</Title>
 
         <List>
           {tags.map((tag, key) => (
@@ -49,7 +75,7 @@ function TagsScreen() {
       </Section>
 
       <Section>
-        <Title>Личность и навыки</Title>
+        <Title>Personality and skills</Title>
 
         <List>
           {tags.map((tag, key) => (
@@ -64,7 +90,7 @@ function TagsScreen() {
       </Section>
 
       <Section>
-        <Title>Экономика и Бизнес</Title>
+        <Title>Economy and Business</Title>
 
         <List>
           {tags.map((tag, key) => (
@@ -79,7 +105,7 @@ function TagsScreen() {
       </Section>
 
       <Section>
-        <Title>Общество</Title>
+        <Title>Society</Title>
 
         <List>
           {tags.map((tag, key) => (
