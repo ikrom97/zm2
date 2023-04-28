@@ -1,38 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
-import { posts } from '@/mocks/posts';
+import React, { useEffect } from 'react';
 import CloseIcon from '../icons/close-icon';
 import style from './style.module.css';
 
-function SelectedPost() {
-  const router = useRouter();
-  const postId = router.query.post;
-  const [post, setPost] = useState(null);
-
+function SelectedPost({ post, setPost }) {
   const handleWrapClick = (evt) => {
     if (evt.target === evt.currentTarget) {
-      router.push(router.pathname);
+      setPost(null);
     }
   };
 
   useEffect(() => {
     const handleDocumentKeydown = (evt) => {
-      if (evt.key === "Escape") {
-        router.push(router.pathname);
+      if (evt.key === 'Escape') {
+        setPost(null);
       }
     };
-    if (postId) {
-      document.addEventListener('keydown', handleDocumentKeydown);
-      document.body.style.overflow = 'hidden';
-      document.body.style.marginRight = '8px';
-      setPost(posts.find(({ id }) => id == +postId))
-    } else {
-      setPost(null);
-      document.body.removeAttribute('style');
-    }
+    document.addEventListener('keydown', handleDocumentKeydown);
 
     return () => document.removeEventListener('keydown', handleDocumentKeydown);
-  }, [router, postId]);
+  }, []);
 
   return post ? (
     <dialog className={style.modal} onClick={handleWrapClick}>
@@ -48,7 +34,7 @@ function SelectedPost() {
         <button
           className={style.close}
           type="button"
-          onClick={() => router.push(router.pathname)}
+          onClick={() => setPost(null)}
         >
           <CloseIcon width={18} height={18} />
         </button>

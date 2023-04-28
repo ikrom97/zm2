@@ -3,7 +3,7 @@ import { posts } from '@/mocks/posts';
 import PostCard from '@/components/ui/post-card/post-card';
 import style from './style.module.css';
 
-function Sidebar() {
+function Sidebar({ post, setPost }) {
   return (
     <aside className={style.sidebar}>
       <div className={style.posts}>
@@ -11,6 +11,7 @@ function Sidebar() {
           <PostCard
             key={post.id}
             post={post}
+            setPost={setPost}
           />
         )}
       </div>

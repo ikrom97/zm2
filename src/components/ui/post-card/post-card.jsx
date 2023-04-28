@@ -1,14 +1,13 @@
 import React from 'react';
-import Link from 'next/link';
 import style from './style.module.css';
 import classNames from 'classnames';
 
-function PostCard({ post, className }) {
-  const { id, title, image } = post;
+function PostCard({ post, className, setPost }) {
+  const { title, image } = post;
 
   return (
     <article className={classNames(style.card, className)}>
-      <Link className={style.link} href={`?post=${id}`}>
+      <button className={style.link} onClick={() => setPost(post)}>
         <img
           className={style.image}
           src={image}
@@ -16,7 +15,7 @@ function PostCard({ post, className }) {
           height={142}
           alt={title}
         />
-      </Link>
+      </button>
     </article>
   );
 }
