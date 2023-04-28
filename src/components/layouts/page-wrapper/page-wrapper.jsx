@@ -1,10 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
-import { PageContainer } from './styled';
 import Sidebar from '../sidebar/sidebar';
 import SelectedPost from '@/components/ui/selected-post/selected-post';
 import Header from '../header/header';
 import Footer from '../footer/footer';
+import Container from '@/components/ui/container/container';
+import style from './style.module.css';
 
 function PageWrapper({ children, withSidebar }) {
   return (
@@ -15,10 +16,10 @@ function PageWrapper({ children, withSidebar }) {
 
       <Header />
 
-      <PageContainer>
+      <Container className={style.container}>
         {withSidebar && <Sidebar />}
         {children}
-      </PageContainer>
+      </Container>
 
       <Footer />
 

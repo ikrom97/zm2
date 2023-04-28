@@ -1,0 +1,86 @@
+.screen {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  width: 100%;
+}
+
+.screenTitle {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #E2B65C;
+}
+
+.authorName {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #111111;
+}
+
+.author {
+  float: right;
+  max-width: max-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 72px;
+  margin-bottom: 24px;
+  gap: 24px;
+}
+
+.authorImage {
+  border-radius: 8px;
+}
+
+.quote {
+  color: #747474;
+  text-align: center;
+}
+
+.infoItem {
+  border-top: 1px solid #B2B2B2;
+  padding: 16px;
+  padding-bottom: 24px;
+  color: #747474;
+  display: grid;
+}
+
+.button {
+  width: max-content;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .screen {
+    padding: 0;
+  }
+
+  .author {
+    float: none;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .authorImage {
+    height: auto;
+  }
+
+  .quote {
+    text-align: left;
+  }
+
+  .screenTitle {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .authorName {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+}

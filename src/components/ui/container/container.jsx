@@ -1,11 +1,15 @@
 import React from 'react';
-import { StyledContainer } from './styled';
+import classNames from 'classnames';
+import style from './style.module.css';
 
-function Container({ children, ...rest }) {
+function Container({ children, className, ...rest }) {
   return (
-    <StyledContainer {...rest}>
+    <div
+      {...rest}
+      className={classNames(style.container, className)}
+    >
       {children}
-    </StyledContainer>
+    </div>
   );
 }
 

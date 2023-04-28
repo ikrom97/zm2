@@ -1,7 +1,7 @@
 import React from 'react';
 import ArrowIcon from '@/components/ui/icons/arrow-icon';
 import TextButton from '@/components/ui/text-button/text-button';
-import { Wrapper } from './styled';
+import style from './style.module.css';
 
 function QuoteTags() {
   const tags = [
@@ -9,13 +9,13 @@ function QuoteTags() {
   ];
 
   return (
-    <Wrapper>
+    <div className={style.wrapper}>
       {tags?.map((tag) => (
         <TextButton key={tag} href={`?tag=${tag}`}>
           <ArrowIcon /> {tag}
         </TextButton>
       ))}
-    </Wrapper>
+    </div>
   );
 }
 

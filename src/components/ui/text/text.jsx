@@ -1,11 +1,15 @@
 import React from 'react';
-import { StyledText } from './styled';
+import style from './style.module.css';
+import classNames from 'classnames';
 
-function Text({ children, ...rest }) {
+function Text({ children, className, ...rest }) {
   return (
-    <StyledText {...rest}>
+    <p
+      {...rest}
+      className={classNames(style.text, className)}
+    >
       {children}
-    </StyledText>
+    </p>
   );
 }
 

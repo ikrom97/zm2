@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { CloseButton, Post, PostImage, PostTitle, PostWrap } from './styled';
 import { useRouter } from 'next/router';
 import { posts } from '@/mocks/posts';
-import Text from '../text/text';
 import CloseIcon from '../icons/close-icon';
+import style from './style.module.css';
 
 function SelectedPost() {
   const router = useRouter();
@@ -36,24 +35,25 @@ function SelectedPost() {
   }, [router, postId]);
 
   return post ? (
-    <PostWrap onClick={handleWrapClick}>
-      <Post>
-        {/* <PostTitle>{post?.title}</PostTitle> */}
-
-        <PostImage
+    <dialog className={style.modal} onClick={handleWrapClick}>
+      <article className={style.post}>
+        <img
+          className={style.image}
           src={post?.image}
           width={928}
           height={568}
           alt={post?.title}
         />
 
-        {/* <Text color="#747474">{post?.description}</Text> */}
-
-        <CloseButton type="button" onClick={() => router.push(router.pathname)}>
+        <button
+          className={style.close}
+          type="button"
+          onClick={() => router.push(router.pathname)}
+        >
           <CloseIcon width={18} height={18} />
-        </CloseButton>
-      </Post>
-    </PostWrap>
+        </button>
+      </article>
+    </dialog>
   ) : null;
 }
 

@@ -1,16 +1,25 @@
 import React from 'react';
-import { StyledButton } from './styled';
 import Link from 'next/link';
+import style from './style.module.css';
+import classNames from 'classnames';
 
-function Button({ children, href, ...rest }) {
+function Button({ children, href, className, ...rest }) {
   return href ? (
-    <StyledButton as={Link} href={href} {...rest}>
+    <Link
+      href={href}
+      {...rest}
+      className={classNames(style.button, className)}
+    >
       {children}
-    </StyledButton>
+    </Link>
   ) : (
-    <StyledButton type="button" {...rest}>
+    <button
+      type="button"
+      {...rest}
+      className={classNames(style.button, className)}
+    >
       {children}
-    </StyledButton>
+    </button>
   );
 }
 

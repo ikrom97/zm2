@@ -1,34 +1,35 @@
 import React from 'react';
-import { SocialItem, SocialList, StyledShareIcon, Wrapper } from './styled';
 import FacebookIcon from '../../icons/facebook-icon';
 import InstagramIcon from '../../icons/instagram-icon';
 import TwitterIcon from '../../icons/twitter-icon';
 import TelegramIcon from '../../icons/telegram-icon';
 import CopyIcon from '../../icons/copy-icon';
+import style from './style.module.css';
+import ShareIcon from '../../icons/share-icon';
 
 function QuoteShare() {
   return (
-    <Wrapper>
-      <SocialList>
-        <SocialItem title="Фейсбук">
+    <div className={style.wrapper}>
+      <div className={style.socialList}>
+        <button className={style.socialItem} title="Фейсбук">
           <FacebookIcon width="14" height="14" />
-        </SocialItem>
-        <SocialItem title="Инстаграм">
+        </button>
+        <button className={style.socialItem} title="Инстаграм">
           <InstagramIcon width="14" height="14" />
-        </SocialItem>
-        <SocialItem title="Твиттер">
+        </button>
+        <button className={style.socialItem} title="Твиттер">
           <TwitterIcon width="14" height="14" />
-        </SocialItem>
-        <SocialItem title="Телеграм">
+        </button>
+        <button className={style.socialItem} title="Телеграм">
           <TelegramIcon width="14" height="14" />
-        </SocialItem>
-        <SocialItem title="Скопировать">
+        </button>
+        <button className={style.socialItem} title="Скопировать">
           <CopyIcon width="14" height="14" />
-        </SocialItem>
-      </SocialList>
+        </button>
+      </div>
 
-      <StyledShareIcon />
-    </Wrapper>
+      <ShareIcon className={style.icon} />
+    </div>
   );
 }
 

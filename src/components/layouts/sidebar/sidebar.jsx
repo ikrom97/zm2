@@ -1,26 +1,20 @@
 import React from 'react';
-import { Header, HeaderTitle, Posts, StyledSidebar } from './styled';
-import Text from '@/components/ui/text/text';
 import { posts } from '@/mocks/posts';
 import PostCard from '@/components/ui/post-card/post-card';
+import style from './style.module.css';
 
 function Sidebar() {
   return (
-    <StyledSidebar>
-      {/* <Header>
-        <HeaderTitle>Motivational <br /> illustrations</HeaderTitle>
-        <Text clr="#747474">Brief Description of <br /> Motivational Quotes</Text>
-      </Header> */}
-
-      <Posts>
+    <aside className={style.sidebar}>
+      <div className={style.posts}>
         {posts?.map((post) =>
           <PostCard
             key={post.id}
             post={post}
           />
         )}
-      </Posts>
-    </StyledSidebar>
+      </div>
+    </aside>
   );
 }
 

@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.image {
+  width: 100%;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    min-width: max-content;
+  }
+  .image {
+    width: 232px;
+    height: 142px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+}

@@ -1,24 +1,19 @@
 export const AppRoute = {
   Home: '/',
-  Quotes: '/',
-  QuotesSelected: '/quotes/:id',
   Tags: '/tags',
   Author: '/author',
-  PrivacyPolicy: '/privacy-policy',
 };
 
 export const AppPage = {
-  Home: 'Home',
-  Quotes: 'Thoughts',
+  Home: 'Thoughts',
   Tags: 'Tags',
   Author: 'About Author',
-  PrivacyPolicy: 'Terms of use',
 };
 
 export const navs = [
   {
-    title: AppPage.Quotes,
-    path: AppRoute.Quotes,
+    title: AppPage.Home,
+    path: AppRoute.Home,
   },
   {
     title: AppPage.Tags,

@@ -1,25 +1,23 @@
 import React from 'react';
-import { Card, CardLink, PostDescription, PostImage, PostTitle } from './styled';
+import Link from 'next/link';
+import style from './style.module.css';
+import classNames from 'classnames';
 
-function PostCard({ post }) {
-  const { id, title, image, description } = post;
+function PostCard({ post, className }) {
+  const { id, title, image } = post;
 
   return (
-    <Card>
-      <CardLink href={`?post=${id}`}>
-        <PostImage
+    <article className={classNames(style.card, className)}>
+      <Link className={style.link} href={`?post=${id}`}>
+        <img
+          className={style.image}
           src={image}
           width={232}
           height={142}
           alt={title}
-          priority={id == 1}
         />
-
-        {/* <PostTitle>{title}</PostTitle> */}
-      </CardLink>
-
-      {/* <PostDescription>{description}</PostDescription> */}
-    </Card>
+      </Link>
+    </article>
   );
 }
 
