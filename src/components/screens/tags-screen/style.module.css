@@ -21,13 +21,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  line-height: 32px;
 }
 
 .listItem {
   display: flex;
   cursor: pointer;
   transition: 0.3s;
+  margin-bottom: 8px;
 }
 
 .listItem:hover {
