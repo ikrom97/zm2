@@ -21,9 +21,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px 16px;
+  line-height: 32px;
 }
 
 .listItem {
@@ -34,4 +32,22 @@
 
 .listItem:hover {
   color: #E2B65C;
+}
+
+@media screen and (min-width: 600px) {
+  .list {
+    column-count: 2;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .list {
+    column-count: 3;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .list {
+    column-count: 4;
+  }
 }

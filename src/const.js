@@ -14,12 +14,10 @@ export const navs = [
   {
     title: AppPage.Home,
     path: AppRoute.Home,
-  },
-  {
+  }, {
     title: AppPage.Tags,
     path: AppRoute.Tags,
-  },
-  {
+  }, {
     title: AppPage.Author,
     path: AppRoute.Author,
   }

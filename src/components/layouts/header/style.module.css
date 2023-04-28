@@ -12,4 +12,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    flex-wrap: nowrap;
+  }
 }

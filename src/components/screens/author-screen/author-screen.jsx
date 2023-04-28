@@ -26,9 +26,9 @@ function AuthorScreen() {
           Social entrepreneur & Chairman. I also engage in philosophical creativity.
         </div>
 
-        <div className={style.infoItem}>
+        <time className={style.infoItem}>
           May 1, 1972
-        </div>
+        </time>
 
         <div className={style.infoItem}>
           <Text>From my own philosophical creativity</Text>
