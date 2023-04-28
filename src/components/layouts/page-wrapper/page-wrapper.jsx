@@ -6,7 +6,6 @@ import Header from '../header/header';
 import Footer from '../footer/footer';
 import Container from '@/components/ui/container/container';
 import style from './style.module.css';
-import { posts } from '@/mocks/posts';
 
 function PageWrapper({ children, withSidebar }) {
   const [post, setPost] = useState(null);

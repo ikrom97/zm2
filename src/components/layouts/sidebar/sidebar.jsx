@@ -3,7 +3,7 @@ import { posts } from '@/mocks/posts';
 import PostCard from '@/components/ui/post-card/post-card';
 import style from './style.module.css';
 
-function Sidebar({ post, setPost }) {
+function Sidebar({ setPost }) {
   return (
     <aside className={style.sidebar}>
       <div className={style.posts}>
